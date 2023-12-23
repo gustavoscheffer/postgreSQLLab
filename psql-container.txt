@@ -1,0 +1,2 @@
+docker run mypostgres-postgresql-client --rm --tty -i --restart='Never' --namespace postgres-helmdemo -v sql:/tmp/sql --image docker.io/bitnami/postgresql:16.1.0-debian-11-r9 --env="PGPASSWORD=pBlNCC64qs" `
+      --command -- psql --host mypostgres-postgresql -U postgres -d postgres -p 5432 -f /tmp/sql/create_mechabuda.sql
